@@ -447,7 +447,7 @@ footer i {
   content: "";
   height: 100%;
   width: 100%;
-  border-left: 2px solid black;
+  border-left: 2px solid #e02c6d;
   left: 0;
   animation: typing 2s steps(12) infinite;
   background-color: white;
