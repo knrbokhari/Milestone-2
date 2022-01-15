@@ -73,7 +73,7 @@ main {
   align-items: center;
 }
 .top-left-part {
-  width: 50%;
+  width: 60%;
   margin-top: 30px;
 }
 .top-left-part p {
@@ -105,7 +105,7 @@ main {
   transform: rotate(360deg);
 }
 .top-right-part {
-  width: 50%;
+  width: 40%;
   margin-top: 80px;
   background-image: url(images/Circle\ design.svg);
   background-position: center;
@@ -115,7 +115,7 @@ main {
   justify-content: center;
 }
 .top-right-part img {
-  max-width: 440px;
+  max-width: 100%;
 }
 
 /* -----------------company-logo------------------- */
@@ -320,13 +320,8 @@ footer i {
     line-height: 42px;
     text-align: center;
   }
-  h2 {
-  }
   h3 {
-  }
-  h4 {
-  }
-  p {
+    font-size: 16px;
   }
   /* ---------------header------------------ */
   header {
@@ -352,8 +347,11 @@ footer i {
     text-align: center;
     margin: 10px 25px 0;
   }
-  .btn {
-    margin-left: 100px;
+  .top-left-part a {
+    display: block;
+    text-align: center;
+    width: 150px;
+    margin: 25px auto 0;
   }
   .top-right-part {
     display: inline;
@@ -376,7 +374,12 @@ footer i {
   .popular-collection a {
     justify-content: center;
   }
-
+  .collection {
+    width: 250px;
+  }
+  .collection img {
+    width: 100%;
+  }
   /* -----------------.contacts---------------- */
   .contacts {
     width: 85%;
@@ -400,6 +403,26 @@ footer i {
                     tab 
 ----------------------------------------------*/
 @media only screen and (min-width: 577px) and (max-width: 992px) {
-  /* ---------------main------------------ */
-  /* ---------------main------------------ */
+  h1 {
+    font-size: 42px;
+    line-height: 55px;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  /* ---------------header------------------ */
+  header {
+    width: 90%;
+  }
+  nav > ul > li {
+    padding: 7px 10px;
+  }
+  /* ---------------top-left------------------ */
+  .top-left-part {
+    margin: 0 20px;
+  }
+  /* ---------------collection------------------ */
+  .popular-collection a {
+    justify-content: center;
+  }
 }
