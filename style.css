@@ -31,10 +31,9 @@ h4 {
 ----------------------------------------------*/
 header {
   display: flex;
-  width: 1200px;
+  width: 80%;
   justify-content: space-between;
   margin-top: 50px;
-  /* display: none; */
 }
 .logo {
   font-weight: bold;
@@ -69,10 +68,9 @@ main {
 }
 /* -----------------top part------------------- */
 .top-part {
-  max-width: 1200px;
+  max-width: 1100px;
   display: flex;
   align-items: center;
-  /* display: none; */
 }
 .top-left-part {
   width: 50%;
@@ -95,16 +93,16 @@ main {
   color: #ffffff;
   text-decoration: none;
   margin-top: 25px;
+  transition: width 2s linear;
 }
-/* .btn:hover { */
-/* animation: animation 1s; */
-/* animation: name duration timing-function delay iteration-count direction fill-mode; */
-/* animation-timing-function: linear; */
-/* } */
-.btn .fas {
+.fa-arrow-right {
   font-size: 16px;
   color: #ffffff;
   margin-left: 10px;
+  transition: transform 2s linear;
+}
+.btn:hover .fa-arrow-right {
+  transform: rotate(360deg);
 }
 .top-right-part {
   width: 50%;
@@ -312,14 +310,96 @@ footer i {
   color: white;
   cursor: pointer;
 }
-/* @keyframes animation {
-  0% {
-    font-size: 16px;
+
+/* ---------------------------------------------
+                    mobile 
+----------------------------------------------*/
+@media only screen and (max-width: 576px) {
+  h1 {
+    font-size: 28px;
+    line-height: 42px;
+    text-align: center;
   }
-  50% {
-    font-size: 17px;
+  h2 {
   }
-  100% {
-    font-size: 18px;
+  h3 {
   }
-} */
+  h4 {
+  }
+  p {
+  }
+  /* ---------------header------------------ */
+  header {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-top: 30px;
+  }
+  nav {
+    display: none;
+  }
+  /* ---------------top part------------------ */
+  .top-part {
+    display: inline;
+  }
+  .top-left-part {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .top-left-part p {
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    margin: 10px 25px 0;
+  }
+  .btn {
+    margin-left: 100px;
+  }
+  .top-right-part {
+    display: inline;
+    width: 100%;
+  }
+  .top-right-part img {
+    margin-top: 40px;
+    width: 100%;
+  }
+  /* ---------------company-logo------------------ */
+  .company-logo {
+    border: none;
+    margin: 50px 0;
+    padding: 0 30px;
+  }
+  .company-logo img {
+    margin-top: 10px;
+  }
+  /* ---------------collection------------------ */
+  .popular-collection a {
+    justify-content: center;
+  }
+
+  /* -----------------.contacts---------------- */
+  .contacts {
+    width: 85%;
+    padding: 20px 10px;
+  }
+  .contacts > h2 {
+    margin-bottom: 30px;
+  }
+  .contact {
+    display: inline;
+  }
+  .contact-info {
+    width: 100%;
+  }
+  .massage {
+    width: 100%;
+    margin-top: 25px;
+  }
+}
+/* ---------------------------------------------
+                    tab 
+----------------------------------------------*/
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  /* ---------------main------------------ */
+  /* ---------------main------------------ */
+}
