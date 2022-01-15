@@ -418,7 +418,8 @@ footer i {
     display: inline;
   }
   .contact-info {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
   }
   .massage {
     width: 100%;
