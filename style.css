@@ -19,6 +19,13 @@ h2 {
   font-size: 28px;
   color: #3a3a3a;
 }
+h4 {
+  font-family: Inter;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 400;
+  margin-top: 5px;
+}
 /* ---------------------------------------------
                     header 
 ----------------------------------------------*/
@@ -37,14 +44,14 @@ header {
   color: #3a3a3a;
 }
 /* ---------------navber------------------ */
-nav ul {
+ul {
   display: flex;
 }
-nav ul li {
+ul li {
   list-style: none;
   padding: 10px 20px;
 }
-nav ul li a {
+ul li a {
   text-decoration: none;
   font-weight: 600;
   font-size: 16px;
@@ -78,7 +85,7 @@ main {
   color: #3a3a3a;
   margin-top: 15px;
 }
-.top-left-part a {
+.btn {
   display: inline-block;
   background-color: #e02c6d;
   border-radius: 40px;
@@ -89,27 +96,16 @@ main {
   text-decoration: none;
   margin-top: 25px;
 }
-.top-left-part a:hover {
-  /* animation: animation 1s; */
-  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-  /* animation-timing-function: linear; */
-}
-.top-left-part .fas {
+/* .btn:hover { */
+/* animation: animation 1s; */
+/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+/* animation-timing-function: linear; */
+/* } */
+.btn .fas {
   font-size: 16px;
   color: #ffffff;
   margin-left: 10px;
 }
-/* @keyframes animation {
-  0% {
-    font-size: 16px;
-  }
-  50% {
-    font-size: 17px;
-  }
-  100% {
-    font-size: 18px;
-  }
-} */
 .top-right-part {
   width: 50%;
   margin-top: 80px;
@@ -145,6 +141,7 @@ main {
 }
 .company-logo img {
   margin: 0 20px;
+  cursor: pointer;
 }
 
 /* -----------------collection------------------- */
@@ -163,7 +160,7 @@ main {
 .collection {
   width: 300px;
   padding: 15px;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
   margin-bottom: 30px;
   cursor: pointer;
@@ -177,13 +174,6 @@ main {
 }
 .collection > h2 {
   margin-top: 15px;
-}
-.collection > h4 {
-  font-family: Inter;
-  font-size: 24px;
-  color: rgba(0, 0, 0, 0.87);
-  font-weight: 400;
-  margin-top: 5px;
 }
 .rating {
   display: flex;
@@ -221,15 +211,115 @@ main {
   align-items: center;
   justify-content: flex-end;
   text-decoration: none;
-  margin-right: 10px;
 }
 .popular-collection.fa-arrow-right {
-  margin-right: 10px;
+  margin-left: 10px;
   color: rgba(224, 44, 109, 0.87);
 }
+
+/* -----------------contact------------------- */
+.contacts {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  max-width: 1000px;
+  margin-top: 70px;
+  padding: 30px;
+}
+.contacts > h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.contact {
+  display: flex;
+  align-items: center;
+}
+.contact-info {
+  width: 50%;
+}
+.info {
+  margin-top: 10px;
+}
+.info a {
+  font-size: 20px;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  margin-top: 10px;
+}
+.info a:hover {
+  color: #e02c6d;
+}
+.info i {
+  font-size: 16px;
+  margin-right: 10px;
+  width: 20px;
+}
+.massage {
+  width: 50%;
+}
+.massage input,
+textarea {
+  width: 80%;
+  padding: 10px 5%;
+  margin: 0 5%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  margin-top: 15px;
+  background-color: #f2f2f2;
+}
+textarea {
+  font-size: 18px;
+}
+.massage a {
+  margin-left: 5%;
+}
+
 /* ---------------------------------------------
                     footer 
 ----------------------------------------------*/
 footer {
   margin-top: 100px;
+  background-color: black;
+  width: 100%;
+  text-align: center;
 }
+footer h4 {
+  color: white;
+  font-weight: bold;
+  margin-top: 50px;
+}
+footer p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #d9dbe1;
+  margin-top: 20px;
+}
+footer ul {
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+footer ul li {
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 15px;
+  margin: 0 5px;
+}
+footer i {
+  color: white;
+  cursor: pointer;
+}
+/* @keyframes animation {
+  0% {
+    font-size: 16px;
+  }
+  50% {
+    font-size: 17px;
+  }
+  100% {
+    font-size: 18px;
+  }
+} */
