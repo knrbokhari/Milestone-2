@@ -34,6 +34,7 @@ header {
   width: 80%;
   justify-content: space-between;
   margin-top: 50px;
+  max-width: 1100px;
 }
 .logo {
   font-weight: bold;
@@ -74,7 +75,7 @@ main {
 }
 .top-left-part {
   width: 60%;
-  margin-top: 30px;
+  margin: 30px 20px;
 }
 .top-left-part p {
   font-weight: 600;
@@ -93,13 +94,12 @@ main {
   color: #ffffff;
   text-decoration: none;
   margin-top: 25px;
-  transition: width 2s linear;
 }
 .fa-arrow-right {
   font-size: 16px;
   color: #ffffff;
   margin-left: 10px;
-  transition: transform 2s linear;
+  transition: transform 1s linear;
 }
 .btn:hover .fa-arrow-right {
   transform: rotate(360deg);
@@ -314,7 +314,7 @@ footer i {
 /* ---------------------------------------------
                     mobile 
 ----------------------------------------------*/
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 560px) {
   h1 {
     font-size: 28px;
     line-height: 42px;
@@ -327,7 +327,7 @@ footer i {
   header {
     display: flex;
     justify-content: center;
-    width: 80%;
+    width: 100%;
     margin-top: 30px;
   }
   nav {
@@ -338,8 +338,8 @@ footer i {
     display: inline;
   }
   .top-left-part {
-    width: 100%;
-    margin-top: 30px;
+    width: 90%;
+    margin: 0 auto;
   }
   .top-left-part p {
     font-size: 14px;
@@ -368,14 +368,16 @@ footer i {
     padding: 0 30px;
   }
   .company-logo img {
-    margin-top: 10px;
+    margin: 10px;
+    max-width: 60px;
   }
   /* ---------------collection------------------ */
   .popular-collection a {
     justify-content: center;
   }
   .collection {
-    width: 250px;
+    max-width: 300px;
+    min-width: 250px;
   }
   .collection img {
     width: 100%;
@@ -402,7 +404,7 @@ footer i {
 /* ---------------------------------------------
                     tab 
 ----------------------------------------------*/
-@media only screen and (min-width: 577px) and (max-width: 992px) {
+@media only screen and (min-width: 560px) and (max-width: 992px) {
   h1 {
     font-size: 42px;
     line-height: 55px;
@@ -424,5 +426,35 @@ footer i {
   /* ---------------collection------------------ */
   .popular-collection a {
     justify-content: center;
+  }
+  .collection {
+    width: 250px;
+  }
+  .collection img {
+    width: 100%;
+  }
+}
+/* ---------------------------------------------------
+                        animation 
+----------------------------------------------------*/
+.animation {
+  position: relative;
+  color: #e02c6d;
+}
+
+.animation::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  border-left: 2px solid black;
+  left: 0;
+  animation: typing 2s steps(12) infinite;
+  background-color: white;
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
   }
 }
